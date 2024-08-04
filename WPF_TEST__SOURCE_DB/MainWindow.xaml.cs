@@ -19,6 +19,27 @@ namespace WPF_TEST__SOURCE_DB
         public MainWindow()
         {
             InitializeComponent();
+            
+        }
+
+        private void Import_Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Save_Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Connection_Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Back_Button_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }
