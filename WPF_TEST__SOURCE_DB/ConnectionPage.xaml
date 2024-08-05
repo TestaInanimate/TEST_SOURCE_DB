@@ -1,0 +1,101 @@
+﻿<Page x:Class="WPF_TEST__SOURCE_DB.ConnectionPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF_TEST__SOURCE_DB"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ConnectionPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Height="30"
+                 Width="400"
+                 Grid.Column="1"
+                 Grid.Row="1"
+                 FontSize="20"
+                 VerticalAlignment="Center"
+                 HorizontalAlignment="Left"
+                 x:Name="IP_connection"/>
+        <TextBox Height="30"
+                 Width="400"
+                 Grid.Column="1"
+                 Grid.Row="2"
+                 FontSize="20"
+                 VerticalAlignment="Center"
+                 HorizontalAlignment="Left"
+                 x:Name="DBName_connection"/>
+        <TextBox Height="30"
+                 Width="400"
+                 Grid.Column="1"
+                 Grid.Row="3"
+                 FontSize="20"
+                 VerticalAlignment="Center"
+                 HorizontalAlignment="Left"
+                 x:Name="UserName_connection"/>
+        <TextBox Height="30"
+                 Width="400"
+                 Grid.Column="1"
+                 Grid.Row="4"
+                 FontSize="20"
+                 VerticalAlignment="Center"
+                 HorizontalAlignment="Left"
+                 x:Name="Password_connection"/>
+        <TextBlock 
+                 Height="30" 
+                 Width="100"
+                 FontSize="20"
+                 ToolTip="Введите уникальный адрес от БД, к которой собираетесь подключиться."
+                 Grid.Row="1"
+                 Text="IP:"/>
+        <TextBlock 
+                 Height="30" 
+                 Width="100"
+                 FontSize="20"
+                 ToolTip="Введите имя БД, к которой собираетесь подключиться."
+                 Grid.Row="2"
+                 Text="Имя БД:"/>
+        <TextBlock 
+                 Height="30" 
+                 Width="100"
+                 FontSize="20"
+                 ToolTip="Введите ваш логин для подключения."
+                 Grid.Row="3"
+                 Text="Логин:"/>
+        <TextBlock 
+                 Height="30" 
+                 Width="100"
+                 FontSize="20"
+                 ToolTip="Введите пароль от БД, к которой собираетесь подключиться по вашему логину (Если имеется)."
+                 Grid.Row="4"
+                 Text="Пароль:"/>
+        <TextBlock 
+                 Height="30" 
+                 FontSize="20"
+                 ToolTip="Данные пройдут проверку после нажатия на клавишу подключения."
+                 Grid.Column="1"
+                 Text="Введите данные, для конкретного подключения:"/>
+        <Button
+                Name="Connect_Button"
+                Grid.Row="5"
+                Click="Connect_Button_Click"
+                Content="Подключиться"
+                Width="100"
+                Height="30"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                ToolTip="Запуск поключения к БД."/>
+    </Grid>
+</Page>

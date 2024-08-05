@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Reflection;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,9 +20,9 @@ namespace WPF_TEST__SOURCE_DB
         public MainWindow()
         {
             InitializeComponent();
-            
-        }
+            Main_Frame.Navigate(new ConnectionPage());
 
+        }
         private void Import_Button_Click(object sender, RoutedEventArgs e)
         {
 
